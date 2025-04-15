@@ -41,8 +41,9 @@ jobs:
               activate:
                 on-profile: common        
           
-          jwt: |
-            secret: ${{ secrets.JWT_SECRET }}
+          jwt:
+            secret: |
+              ${{ secrets.JWT_SECRET }}
           EOL
           cat back/src/main/resources/application-secret.yml
           
